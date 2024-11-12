@@ -2,7 +2,6 @@ import re
 
 url = input("URL: ").strip()
 
-if matches := re.search(r"x.com/(.+)$", url):
-    username = matches.group(1)
+username = re.sub(r"^https://x\.com/", "", url)
 
-print(f"hello, {username}")
+print(f"Username: {username}")
