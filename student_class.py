@@ -11,16 +11,7 @@ class Student:
     def __str__(self):
         return f"{self.name} is from {self.house}"
     
-    def charm(self):
-        match self.patronus:
-            case "Stag":
-                return "🐴"
-            case "Otter":
-                return "🦦"
-            case "Terrier":
-                return "🐶"
-            case _:
-                return "🥢"
+
 
 def main():
     student = get_student()
