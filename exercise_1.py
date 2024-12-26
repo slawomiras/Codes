@@ -1,2 +1,2 @@
-n = int(len(input("Give example: ")))
-print(n)
+n = input("Give example: ")
+print(len(n))
